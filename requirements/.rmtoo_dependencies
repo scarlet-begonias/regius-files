@@ -1,0 +1,24 @@
+artifacts/req-graph1.dot: ${REQS}
+	${CALL_RMTOO}
+artifacts/req-graph2.dot: ${REQS}
+	${CALL_RMTOO}
+artifacts/html/ReqsDocument.html: html/header.html html/footer.html ${TOPIC_ts_common_ReqsDocument_DEPS}
+	${CALL_RMTOO}
+REQS+=requirements/project.req
+artifacts/html/WhatsAbout.html: html/header.html html/footer.html ${TOPIC_ts_common_WhatsAbout_DEPS}
+	${CALL_RMTOO}
+REQS+=requirements/req1.req
+OUTPUT_HTML=artifacts/html/ReqsDocument.html artifacts/html/WhatsAbout.html 
+artifacts/reqtopics.tex: ${REQS}
+	${CALL_RMTOO}
+REQS_LATEX2=artifacts/reqtopics.tex
+artifacts/reqsprios.tex: ${REQS}
+	${CALL_RMTOO}
+artifacts/stats_burndown.csv: ${REQS}
+	${CALL_RMTOO}
+artifacts/stats_reqs_cnt.csv: ${REQS}
+	${CALL_RMTOO}
+artifacts/stats_sprint_burndown.csv: ${REQS}
+	${CALL_RMTOO}
+artifacts/reqs-version.txt: ${REQS}
+	${CALL_RMTOO}

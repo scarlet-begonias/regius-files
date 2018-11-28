@@ -1,0 +1,13 @@
+Name: Regius Files
+Type: master requirement
+Invented on: 2018-11-27
+Invented by: david.miller
+Owner: development
+Description: \emph{Regius Files} enables multi-tenant content file management.
+Rationale: Multi-tenant file management with a modern architecture;
+ a showcase for CQRS, event sourcing, and more.
+Status: not done
+Solved by: req1
+Priority: development:10
+Effort estimation: 5
+Topic: ReqsDocument
