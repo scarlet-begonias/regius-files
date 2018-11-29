@@ -1,0 +1,22 @@
+* tenant service
+Do we bootstrap the system with a known admin tenant and user, like Frevvo does?
+- add tenant
+  + must provide a tenant admin user id and password
+- list tenants
+- deactivate tenant
+
+* privileges
+- manage tenants: only available for users in admin tenant
+- manage users: always only for the tenant this user belongs to
+
+* users
+- each user is scoped to a tenant (userid@tenant)
+
+* privilege service
+- allowed-p: given a user, an operation, and optionally a target object, is the operation allowed?
+
+* user service
+- add user
+- list users
+- modify user
+- deactivate user
